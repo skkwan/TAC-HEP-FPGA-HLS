@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "lec4Ex1.h"
+#include "lec5Ex1.h"
 
 int main () {
   const int    samples=600;
@@ -13,7 +13,7 @@ int main () {
   inp = 0;
   rmp = 1;
   
-  oFile=fopen("lec4Ex1_out.dat","w");
+  oFile=fopen("lec5Ex1_out.dat","w");
   for (i=0;i<=samples;i++) {
   	if (rmp == 1) 
   		inp = inp + 1;
@@ -21,7 +21,7 @@ int main () {
   		inp = inp - 1;
 
 	// Execute the function with latest input
-    lec4Ex1(&output,coef,inp);
+    lec5Ex1(&output,coef,inp);
     
     if ((rmp == 1) && (inp >= 75))
     	rmp = 0;
@@ -34,7 +34,7 @@ int main () {
   fclose(oFile);
   
   printf ("Comparing against output data \n");
-  if (system("diff -w lec4Ex1_out.dat lec4Ex1_out_ref.dat")) {
+  if (system("diff -w lec5Ex1_out.dat lec5Ex1_out_ref.dat")) {
 
 	fprintf(stdout, "*******************************************\n");
 	fprintf(stdout, "FAIL: Output DOES NOT match the reference output\n");
