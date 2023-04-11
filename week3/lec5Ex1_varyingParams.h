@@ -1,6 +1,6 @@
 #ifndef LEC5EX1_VARYINGPARAMS_H_
 #define LEC5EX1_VARYINGPARAMS_H_
-#define N	21
+#define N	101
 
 void lec5Ex1_varyingParams (
   int *y,
