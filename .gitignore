@@ -1,2 +1,4 @@
 *~
 exercise1/project/*
+*.o
+*.exe
