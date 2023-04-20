@@ -1,5 +1,6 @@
 #include "lec6Ex2a.h"
 #include <stdlib.h>
+#include <bitset>
 
 int main () {
   FILE         *oFile;
@@ -14,7 +15,8 @@ int main () {
 
   printf("--------------\n");
   for(int irnd=0; irnd<NN; irnd++){
-    printf("%i, input: %u\n", irnd, input[irnd]);
+    // printf("%i, my input: %u\n", irnd, input[irnd]);
+    std::cout << irnd << ", my input: " << input[irnd]<< std::endl; 
   }
   for(int p=0; p<KK; p++){
     output[p] = 0;
