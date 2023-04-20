@@ -7,8 +7,8 @@ int main() {
 
     FILE *outFile;
 
-    int m1[N] = {1, 2, 3, 4, 5};
-    int m2[N] = {6, 7, 8, 9, 10};
+    int m1[N] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int m2[N] = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
     int sum = 0;
 
     outFile = fopen("matrixMul_out.dat", "w");
