@@ -12,7 +12,7 @@ void lec8Ex1 (
    unsigned int tmp1, tmp2, tmp3;
 
 for_Loop: for (unsigned int i=0 ; i < N; i++) {
-#pragma HLS allocation instances=func limit=1 function
+#pragma HLS latency min=4
 	x = in[i];
 	tmp1 = func(1, 2);
 	tmp2 = func(2, 3);
