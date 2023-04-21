@@ -10,10 +10,12 @@ void matrixMultiplication(int matrix1[N][N], int matrix2[N], int result[N]) {
     // loop_output is over the dimensions of the output array
     loop_output: for (int iOut = 0; iOut < N; iOut++) {
 
-        element = 0; 
-
         // Compute the output element at result[iOut]
         loop_inner: for (int i = 0; i < N; i++) {
+
+            // To make this a perfect for loop, only the inner loop can have content 
+            if (i == 0) element = 0; 
+
             element += (matrix1[iOut][i] * matrix2[i]); 
         }
 
