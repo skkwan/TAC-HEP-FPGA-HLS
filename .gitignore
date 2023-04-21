@@ -3,4 +3,5 @@ exercise1/project/*
 *.o
 *.exe
 */*project-*/*
+*/*/*project-*/*
 *.log
