@@ -13,7 +13,7 @@ void matrixMultiplication(int matrix1[N][N], int matrix2[N], int result[N]) {
         // Compute the output element at result[iOut]
         loop_inner: for (int i = 0; i < N; i++) {
 
-#pragma HLS loop_flatten
+#pragma HLS unroll
             // To make this a perfect for loop, only the inner loop can have content 
             if (i == 0) element = 0; 
 
